@@ -1,0 +1,31 @@
+/* House Style for Qt widgets (light). Generated from tokens.json.
+   Qt stylesheets have no box-shadow, so cards rely on 'raised' fills and 1px lines.
+   Body text uses the system font on desktop: set only the size here. */
+* { font-size: 14px; }
+QWidget { background: #f2f6fb; color: #161b22; }
+QToolTip { background: #ffffff; color: #161b22; border: 1px solid #d2dae4; border-radius: 6px; padding: 6px 9px; }
+QPushButton, QToolButton { background: #ffffff; border: 1px solid #d2dae4; border-radius: 10px; padding: 6px 12px; font-weight: 600; }
+QPushButton:hover, QToolButton:hover { border-color: #8a919b; }
+QPushButton:pressed, QToolButton:pressed { background: #eaeff5; }
+QPushButton:default, QPushButton[primary="true"] { background: #876438; color: #ffffff; border-color: #876438; }
+QPushButton:disabled, QToolButton:disabled { color: #585e67; border-color: #d2dae4; }
+QLineEdit, QSpinBox, QDoubleSpinBox, QComboBox, QPlainTextEdit, QTextEdit { background: #eaeff5; border: 1px solid #8a919b; border-radius: 10px; padding: 6px 9px; selection-background-color: #876438; selection-color: #ffffff; }
+QLineEdit:focus, QSpinBox:focus, QDoubleSpinBox:focus, QComboBox:focus, QPlainTextEdit:focus, QTextEdit:focus { border: 1px solid #876438; }
+QGroupBox { background: #fdfeff; border: 1px solid #d2dae4; border-radius: 14px; margin-top: 18px; padding: 12px; }
+QGroupBox::title { subcontrol-origin: margin; left: 12px; padding: 0 6px; color: #585e67; font-weight: 600; }
+QListView, QTreeView, QTableView { background: #fdfeff; border: 1px solid #d2dae4; border-radius: 14px; alternate-background-color: #eaeff5; }
+QListView::item, QTreeView::item { padding: 6px 9px; border-radius: 6px; }
+QListView::item:selected, QTreeView::item:selected, QTableView::item:selected { background: #f9ead9; color: #6f4e21; }
+QHeaderView::section { background: #fdfeff; color: #585e67; border: 0; border-bottom: 1px solid #d2dae4; padding: 6px 9px; font-weight: 600; }
+QTabBar::tab { padding: 6px 12px; border-radius: 6px; color: #585e67; }
+QTabBar::tab:selected { background: #ffffff; color: #161b22; }
+QCheckBox::indicator, QRadioButton::indicator { width: 16px; height: 16px; border: 1px solid #8a919b; background: #eaeff5; }
+QCheckBox::indicator { border-radius: 5px; } QRadioButton::indicator { border-radius: 8px; }
+QCheckBox::indicator:checked, QRadioButton::indicator:checked { background: #876438; border-color: #876438; }
+QSlider::groove:horizontal { height: 6px; background: #d2dae4; border-radius: 3px; }
+QSlider::sub-page:horizontal { background: #876438; border-radius: 3px; }
+QSlider::handle:horizontal { width: 16px; margin: -5px 0; background: #ffffff; border: 1px solid #8a919b; border-radius: 8px; }
+QProgressBar { background: #d2dae4; border: 0; border-radius: 3px; height: 6px; text-align: center; color: transparent; }
+QProgressBar::chunk { background: #876438; border-radius: 3px; }
+QScrollBar:vertical { background: transparent; width: 10px; } QScrollBar::handle:vertical { background: #d2dae4; border-radius: 5px; min-height: 32px; }
+QScrollBar::add-line, QScrollBar::sub-line { height: 0; width: 0; }

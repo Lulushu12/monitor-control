@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+# Dev launcher: runs the app from this checkout with PySide6 from nixpkgs.
+here="$(cd "$(dirname "$(readlink -f "$0")")" && pwd)"
+args=""
+[ $# -gt 0 ] && args="$(printf '%q ' "$@")"
+export MONITOR_CONTROL_EXEC="$here/monitor-control"
+exec nix-shell -p 'python3.withPackages(p: [p.pyside6])' ddcutil --run "cd '$here' && exec python3 -m monitor_control $args"
